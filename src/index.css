@@ -46,9 +46,9 @@ img {
   font-size: 2rem;
 }
 
-.products {
+.product__list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 0.5rem;
 }

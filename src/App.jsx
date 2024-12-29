@@ -1,4 +1,4 @@
-import React from 'react';
+ 
 
 import Products from './components/Products';
 
@@ -87,7 +87,12 @@ const App = () => {
   return (
     <div>
       <h1 className="title">BD Store</h1>
-      <Products  />
+      <div className='product__list'>
+       {
+        products.map(product => <Products key={product.id} products={product} />)
+       }
+      </div>
+       
     </div>
   );
 };
